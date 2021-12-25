@@ -16,11 +16,11 @@ func GenSortInSlice(sliceLen int) []int {
 	return originSlice
 }
 
-// GenRandSlice 随机生成切片
+// GenShuffleSlice 生成随机顺序的切片
 // sliceLen生成切片的长度
 // return 1 排序好的切片
 // return 2 从排序好的切片生成的乱序切片
-func GenRandSlice(sliceLen int) ([]int, []int) {
+func GenShuffleSlice(sliceLen int) ([]int, []int) {
 	originSlice := GenSortInSlice(sliceLen)
 	randSlice := make([]int, len(originSlice))
 	copy(randSlice, originSlice)

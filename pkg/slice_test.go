@@ -6,5 +6,5 @@ import (
 )
 
 func TestGenRandSlice(t *testing.T) {
-	fmt.Println(GenRandSlice(20))
+	fmt.Println(GenShuffleSlice(20))
 }
